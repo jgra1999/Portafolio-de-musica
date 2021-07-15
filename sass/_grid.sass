@@ -1,0 +1,24 @@
+.grid
+    position: relative
+    width: 100%
+    opacity: 0
+    transition: opacity 0.5s linear 1s
+
+.grid.img-cargadas
+    opacity: 1
+
+.grid .item
+    position: absolute
+    display: block
+    padding: 0
+    margin: 10px
+    width: calc(33.33% - 20px)
+
+.grid .item .item-contenido
+    position: relative
+
+.grid .item .item-contenido img 
+    width: 100%
+    cursor: pointer
+    border-radius: 10px
+    vertical-align: top //Con esto quitamos un margen que por defecto tienen las imagenes

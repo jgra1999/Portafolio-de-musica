@@ -1,0 +1,55 @@
+footer .sociales
+    display: flex
+    flex-wrap: wrap
+    justify-content: center 
+    align-items: center
+    padding: 20px
+
+footer .sociales a 
+    display: block
+    width: 60px
+    height: 60px
+    color: #ffffff
+    background: #000000
+    text-align: center
+    border-radius: 100px
+    margin: 20px
+    transition: .3s ease all
+
+footer .sociales .twitter
+    background: #1da1f2
+
+footer .sociales .facebook
+    background: #3b5998
+
+footer .sociales .instagram
+    background: $fucsia
+
+footer .sociales a i
+    font-size: 20px
+    line-height: 60px
+
+footer .contenedor-icon:hover a
+    animation: icono .5s ease 
+
+@keyframes icono
+    from
+        transform: rotate3d(0,0,0,0)  
+
+    to
+        transform: rotate3d(0,1,0, 360deg)
+//Los valores del rotate3d indican en que sentido queremos que rote nuestro icono por medio de los ejes (Y, X, Z, grados que rotara)
+
+footer .creador
+    margin-bottom: 40px
+    text-align: center
+    font-size: 14px
+    color: #c13584
+
+footer .creador a 
+    color: #000000
+    body.dark &
+        color: #ffffff
+
+footer .creador a:hover
+    text-decoration: underline

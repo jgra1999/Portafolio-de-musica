@@ -1,0 +1,42 @@
+.overlay
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(0, 0, 0, 0.9)
+    width: 100%
+    height: 100vh
+    display: none
+    flex-direction: column
+    justify-content: center 
+    align-items: center 
+
+.overlay.activo
+    display: flex
+
+.overlay img 
+    width: 500px
+    height: 500px
+
+.overlay .descripcion 
+    display: block
+    background: #ffffff
+    padding: 20px 
+    text-align: center
+    margin-top: 5px
+    border-radius: 10px
+    max-width: 50%
+
+.contenedor-img 
+    position: relative
+
+.overlay #btn-cerrar-popup
+    background: none
+    font-size: 20px
+    border: none 
+    color: #ffffff
+    position: absolute
+    cursor: pointer
+    right: -20px
+    top: -20px

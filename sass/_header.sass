@@ -1,0 +1,59 @@
+@import _colores
+    
+header
+    padding: 40px 0
+
+header .logo
+    text-align: center
+    margin-bottom: 2.5rem
+
+header .logo img 
+    width: 15.625rem
+    height: auto
+
+header .logo p 
+    color: $fondo-dark
+    font-weight: 700
+    text-transform: capitalize
+    body.dark &
+        color: $gris
+
+header form 
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-bottom: 20px
+    
+header .barra-busqueda
+    width: 70%
+    height: 40px
+    line-height: 40px //Esto es para que el texto dentro del input este centrado 
+    background: #ffffff
+    padding: 0 20px
+    border-radius: 100px
+    border: none
+    text-align: center
+    font-size: 1em
+    &:focus
+        border: 2px solid $gris
+        
+
+    body.dark &:focus 
+        border: 2px solid $fucsia
+
+header .categorias
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    
+header .categorias a
+    color: $gris
+    margin: 10px 20px 
+    font-weight: 700
+    body.dark &
+        color: #ffffff
+
+header .categorias a.activo
+    color: #000
+    body.dark &
+        color: $fucsia
